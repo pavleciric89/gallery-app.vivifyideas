@@ -12,10 +12,14 @@ describe("gallery-app.vivifyideas", () => {
         mainPage.clickOnFilter();
         mainPage.checkFilterFunc("nature");
         browser.sleep(1000);
-    })
+    });
     it("Individualy opening", () => {
         mainPage.clickOnItem();
         mainPage.expectItemUrl();
+    });
+    it("load more items", () => {
+        mainPage.loadMoreBtnFunc();
+        browser.sleep(4000);
     })
 })
 
