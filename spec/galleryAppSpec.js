@@ -11,7 +11,7 @@ describe("gallery-app.vivifyideas", () => {
         mainPage.searchItem("nature");
         mainPage.clickOnFilter();
         mainPage.checkFilterFunc("nature");
-        browser.sleep(1000);
+
     });
     it("Individualy opening", () => {
         mainPage.clickOnItem();
@@ -19,7 +19,7 @@ describe("gallery-app.vivifyideas", () => {
     });
     it("load more items", () => {
         mainPage.loadMoreBtnFunc();
-        browser.sleep(4000);
+
     })
 })
 
